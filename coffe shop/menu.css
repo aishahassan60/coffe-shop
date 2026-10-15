@@ -1,0 +1,218 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f3eb;
+    color: #3e2723;
+}
+
+/* Navigation */
+
+header {
+    background-color: #4e342e;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+header h1 {
+    font-size: 25px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover {
+    color: #ffcc80;
+}
+
+/* Menu Section */
+
+.menu {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.menu h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.menu > p {
+    font-size: 17px;
+    color: #795548;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.menu h2 {
+    font-size: 28px;
+    margin: 35px 0 25px;
+    color: #5d4037;
+}
+
+/* Menu Cards */
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    
+}
+
+.menu-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.menu-card h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+
+}
+
+.menu-card p {
+    color: #777;
+    font-size: 15px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.menu-card span {
+    color: #a66a38;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+    background-color: #4e342e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .menu {
+        padding: 30px 5%;
+    }
+
+    .menu h1 {
+        font-size: 30px;
+    }
+}
+
+
+
+
+/* Menu layout */
+.menu-container {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+/* White coffee cards */
+.menu-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Coffee pictures */
+.menu-card img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+
+
+
+/* Coffee name */
+.menu-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #4e342e;
+}
+
+/* Description */
+.menu-card p {
+    font-size: 15px;
+    color: #777;
+    margin-bottom: 12px;
+}
+
+/* Price */
+.menu-card span {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #a66a38;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .menu-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+}

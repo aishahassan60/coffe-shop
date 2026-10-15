@@ -1,0 +1,108 @@
+
+.contact {
+    background-color: #f8f1e7;
+    padding: 60px 7%;
+    min-height: 80vh;
+}
+
+.contact-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.contact-heading h1 {
+    color: #5c3317;
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.contact-heading p {
+    color: #8b5e3c;
+    font-size: 18px;
+}
+
+.contact-container {
+    display: flex;
+    align-items: stretch;
+    gap: 35px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contact-info,
+.contact-message {
+    flex: 1;
+    padding: 35px;
+    border-radius: 15px;
+    background-color: #fffaf3;
+    box-shadow: 0 5px 20px rgba(60, 35, 15, 0.08);
+}
+
+.contact h2 {
+    color: #5c3317;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.contact h3 {
+    color: #8b5e3c;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.contact p {
+    color: #5b5047;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.contact-item {
+    margin-top: 25px;
+}
+
+.contact-item a {
+    color: #79502f;
+    text-decoration: none;
+    font-size: 16px;
+    overflow-wrap: anywhere;
+}
+
+.contact-item a:hover {
+    color: #b07845;
+    text-decoration: underline;
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #6f4225;
+    color: white;
+    text-decoration: none;
+    padding: 13px 28px;
+    border-radius: 7px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #8b5e3c;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 40px 5%;
+    }
+
+    .contact-heading h1 {
+        font-size: 34px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-message {
+        padding: 25px;
+    }
+}

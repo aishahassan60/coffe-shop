@@ -1,0 +1,87 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f3ed;
+    background-image: url(img/elin-melaas-HgsFVopZ7bo-unsplash.jpg);
+      background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background-color: #3e2723;
+}
+
+nav h2 {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover {
+    color: #d7a86e;
+}
+
+#home {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+#home h1 {
+    font-size: 45px;
+    color: #dfd8dd;
+     margin-bottom: 15px;
+}
+
+#home p {
+    font-size: 20px;
+    margin: 20px 0;
+    color: wheat;
+     margin-bottom: 15px;
+}
+
+#home a {
+    display: inline-block;
+    padding: 14px 25px;
+    background-color: #6f4e37;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+
+.menu-btn {
+    display: inline-block;
+    background-color: #8B4513;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.menu-btn:hover {
+    background-color: #5C2E0B;
+}
